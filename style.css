@@ -20,14 +20,25 @@
   overflow: visible;
 }
 
-h1, h3, p, a{ /*elements will have no background*/
+h1, h3, a{ /*elements will have no background*/
   background-color: rgba(0, 0, 0, 0);
+}
+
+p{
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 28px;
+
+  width: 100%;
 }
 
 h2{
   background-color: rgba(0, 0, 0, 0);
   font-size: 25px;
-  padding-bottom: 8px; 
+  padding-bottom: 8px;
 }
 
 .heading img{ /*adjusts styles of images in heading*/
@@ -43,13 +54,27 @@ h2{
   background-color: white;
 }
 
-.photos{
-  padding: 20px;
+.photos{ /*styles photos and videas*/
+  /*padding: 20px;*/
   background-color: white;
   background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
 }
 
-.socials{
+.photos img{
+  height: 350px;
+  width: auto;
+}
+
+.photos iframe{ /*styles video specifically*/
+  display: block;
+  text-align: center;
+  width: 100%;  /*Makes sure video is not wider than necessary*/
+  box-sizing: border-box;
+  padding: 0px;
+  background: inherit;
+}
+
+.socials{  /*styles social media links*/
   display: block;
   padding: 10px;
   background-color: lightpink;
@@ -62,7 +87,7 @@ h2{
   font-weight: bold;
 }
 
-.socials img{
+.socials img{ /*images as links to social media*/
   display: inline-block;
   padding: inherit;
   height: 65px;
