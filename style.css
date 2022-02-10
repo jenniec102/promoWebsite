@@ -1,41 +1,44 @@
 * { /*styles most of the content in the page*/
   box-sizing: border-box;
+  max-width: 100%;
   text-align: center;
   margin: 0px;
+  margin-bottom: 10px;
   padding: 0px;
-  background-color: rgb(253,188,180); /*lightpink;*/
   font-family: 'Montserrat', sans-serif; /*font from Google Fonts*/
   }
 
+body{ /*styles the body*/
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 10px;
+  background-color: rgb(253,188,180); /*melon pinkish color;*/
+}
+
 .heading{ /*adjusts styles of the heading*/
+  box-sizing: border-box;
   display: block;
   padding: 15px;
   height: 100%;
-  width: 100%;
-  background-color: lightcoral;
   background-image: url(https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=407&q=80);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: visible;
 }
 
-h1, h3, a{ /*elements will have no background*/
-  background-color: rgba(0, 0, 0, 0);
+h1, h3, a{ /*elements will be bolded*/
+  font-weight: bolder;
 }
 
 p{
-  background-color: rgba(0, 0, 0, 0);
   display: block;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   line-height: 28px;
-  width: 100%;
 }
 
 h2{
-  background-color: rgba(0, 0, 0, 0);
   font-size: 25px;
   padding-bottom: 8px;
 }
@@ -44,51 +47,51 @@ h2{
   height: 350px;
   width: auto;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0);
 }
 
-.blurb{ /*adjusts styles of text content*/
+.blurb{ /*adjusts styles of blurb class - text content*/
   padding: 50px;
   margin: 50px;
   background-color: white;
 }
 
-.photos{ /*styles photos and videas*/
+.photos{ /*styles photos class - containing mostly photos/videos*/
   padding: 20px;
   background-color: white;
   background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  background-size: cover;
 }
 
 .photos p{
   line-height: 28px;
-  padding-bottom: 15px;
+  padding: 20px;
 }
 
 .photos img{
-  height: 350px;
-  width: auto;
+  height: auto;
+  width: 650px;
+  max-width: 100%; /*keeps images within the right size*/
 }
 
 .photos iframe{ /*styles video specifically*/
+  box-sizing: border-box;
   display: block;
   text-align: center;
   width: 100%;  /*Makes sure video is not wider than necessary*/
-  box-sizing: border-box;
-  padding: 0px;
-  background: inherit;
 }
 
 .socials{  /*styles social media links*/
   display: block;
   padding: 10px;
   background-color: lightpink;
-  background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  background-image: url(https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=407&q=80);
+  background-size: cover;
 }
 
 .socials p, .socials a{
-  background-color: rgba(0, 0, 0, 0);
   padding: inherit;
   font-weight: bold;
+  font-size: 16px; ;
 }
 
 .socials img{ /*images as links to social media*/
@@ -96,6 +99,5 @@ h2{
   padding: inherit;
   height: 70px;
   width: auto;
-  background-color: rgba(0, 0, 0, 0);
   border-radius: 20px;
 }
